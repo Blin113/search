@@ -226,7 +226,6 @@ namespace search
                     accumulator += info.Key.ToString().ToLower();
                     break;
             }
-
         }
     }
 }
