@@ -10,13 +10,15 @@ namespace search
         private int age;
         private string adress;
         private int personnum;
+        //private int personnumL4;
 
-        public Person(string n, int ag, string ad, int pn)
+        public Person(string n, int ag, string ad, int pn/*, int L4*/)
         {
             name = n;
             age = ag;
             adress = ad;
             personnum = pn;
+            //personnumL4 = L4;
         }
 
         public string Name
@@ -50,7 +52,10 @@ namespace search
 
         public int Personnum
         {
-            get { return personnum; }
+            get 
+            {
+                return personnum;
+            }
             set
             {
                 if (value < 0)
@@ -64,5 +69,23 @@ namespace search
                 }
             }
         }
+        /*
+        public int PersonnumL4
+        {
+            get { return personnumL4; }
+            set 
+            {
+                if (value < 0)
+                {
+                    Console.WriteLine("Invalid input");
+                    personnumL4 = 0;
+                }
+                else
+                {
+                    personnumL4 = value;
+                }
+            }
+        }
+        */
     }
 }
