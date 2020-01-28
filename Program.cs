@@ -22,10 +22,6 @@ namespace search
             Console.SetCursorPosition(0, 0);
             Searchbar();
 
-
-
-
-
             List<int> result = LinSearch(personlista, accumulator);
 
             foreach (int index in result)
@@ -70,9 +66,13 @@ namespace search
 
         public static void Searchbar()
         {
-            Console.Write("Search: ");
-            Console.ForegroundColor = ConsoleColor.Black;
-            Console.BackgroundColor = ConsoleColor.White;
+            Console.Write("Search:");
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.Write("----------------------------");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.SetCursorPosition(7, 0);
             Console.Write(accumulator);
             Console.ForegroundColor = ConsoleColor.White;
             Console.BackgroundColor = ConsoleColor.Black;
